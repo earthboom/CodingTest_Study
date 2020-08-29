@@ -146,7 +146,30 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Solutions\barcet_arrange.h" />
+    <ClInclude Include="Solutions\Baseball.h" />
+    <ClInclude Include="Solutions\bestelbum_lv3.h" />
+    <ClInclude Include="Solutions\BiggestNumber.h" />
+    <ClInclude Include="Solutions\boat.h" />
+    <ClInclude Include="Solutions\Carpet.h" />
     <ClInclude Include="Solutions\character_compression.h" />
+    <ClInclude Include="Solutions\connectland.h" />
+    <ClInclude Include="Solutions\diskcontroler.h" />
+    <ClInclude Include="Solutions\doublepriqueue.h" />
+    <ClInclude Include="Solutions\H_Index.h" />
+    <ClInclude Include="Solutions\joystick.h" />
+    <ClInclude Include="Solutions\make_hugenumber.h" />
+    <ClInclude Include="Solutions\Mockxam.h" />
+    <ClInclude Include="Solutions\morespicy.h" />
+    <ClInclude Include="Solutions\NumberK.h" />
+    <ClInclude Include="Solutions\pipecut.h" />
+    <ClInclude Include="Solutions\primeNumber.h" />
+    <ClInclude Include="Solutions\print.h" />
+    <ClInclude Include="Solutions\ramenFactory.h" />
+    <ClInclude Include="Solutions\snowball.h" />
+    <ClInclude Include="Solutions\startcount.h" />
+    <ClInclude Include="Solutions\stock.h" />
+    <ClInclude Include="Solutions\TargetNumber.h" />
+    <ClInclude Include="Solutions\workout_clothes.h" />
     <ClInclude Include="Solution_headers.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
