@@ -2,9 +2,7 @@
 //
 
 #include "stdafx.h"
-
-#include "character_compression.h"
-#include "barcet_arrange.h"
+#include "Solution_headers.h"
 
 int main()
 {
