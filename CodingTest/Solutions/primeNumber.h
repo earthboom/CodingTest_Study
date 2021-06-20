@@ -2,6 +2,102 @@
 
 #include "stdafx.h"
 
+// 프로그래머스 고득점 Kit
+// 완전탐색 - 소수 찾기
+
+int Find_PrimeNumber(string numbers)
+{
+    int answer = 0;
+
+    vector<char> vecNumber;
+    for (int i = 0; i < numbers.size(); ++i)
+        vecNumber.emplace_back(numbers[i]);
+    
+    vector<int> all_numbers;
+    int cnt = 0;
+    for (int i = 1; i < numbers.size() + 1; ++i)
+    {
+        do
+        {
+            string strTemp = "";
+            int digits = 0;
+
+            for (char& n : vecNumber)
+            {
+                strTemp += n;
+                if (++digits == i)
+                    break;
+            }
+
+            all_numbers.emplace_back(stoi(strTemp));
+        } while (next_permutation(vecNumber.begin(), vecNumber.end()));
+    }
+
+    sort(all_numbers.begin(), all_numbers.end());
+    all_numbers.erase(unique(all_numbers.begin(), all_numbers.end()), all_numbers.end());
+
+    auto primecheck = [](int num) ->bool {
+        if (num <= 1)
+            return false;
+
+        int sqr = sqrt(num);
+        for (int i = 2; i <= sqr; ++i)
+        {
+            if (num % i == 0)
+                return false;
+        }
+
+        return true;
+    };
+
+    for (int& an : all_numbers)
+    {
+        if (primecheck(an))
+            ++answer;
+    }
+
+    return answer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 bool Check_PrimerNumber(int _num)
 {
     if (_num <= 1)

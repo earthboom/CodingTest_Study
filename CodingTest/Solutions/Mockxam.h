@@ -2,6 +2,83 @@
 
 #include "stdafx.h"
 
+vector<int> MockTest(vector<int> answers)
+{
+    vector<int> answer;
+    vector<pair<vector<int>, int>> picktype = 
+    {
+        { {1, 2, 3, 4, 5}, 0 },
+        { {2, 1, 2, 3, 2, 4, 2, 5}, 0 },
+        { {3, 3, 1, 1, 2, 2, 4, 4, 5, 5}, 0 }
+    };
+
+    for (int i = 0; i < answers.size(); ++i)
+    {        
+        for (int j = 0; j < 3; ++j)
+        {
+            int index = i - ((i / picktype[j].first.size()) * picktype[j].first.size());
+
+            if (picktype[j].first[index] == answers[i])
+                ++picktype[j].second;
+        }
+    }
+    
+    vector<pair<int, int>> align =
+    {
+        {1, picktype[0].second},
+        {2, picktype[1].second},
+        {3, picktype[2].second}
+    };
+
+    sort(align.begin(), align.end(), 
+        [](pair<int, int>& _a, pair<int, int>& _b) {
+            return _a.second > _b.second;
+        });
+
+    answer.emplace_back(align[0].first);
+
+    if (align[0].second == align[1].second)
+    {
+        answer.emplace_back(align[1].first);
+
+        if (align[1].second == align[2].second)
+            answer.emplace_back(align[2].first);
+    }
+   
+    return answer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 vector<int> solution_Mockxam(vector<int> answers)
 {
     vector<int> answer;

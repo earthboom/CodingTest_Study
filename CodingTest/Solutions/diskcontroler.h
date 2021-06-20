@@ -2,6 +2,57 @@
 
 #include "stdafx.h"
 
+// 프로그래머스 고득점 Kit
+// 힙 - 디스크 컨트롤
+
+class Compare_job
+{
+public:
+    bool operator()(vector<int>& _a, vector<int>& _b)
+    {
+        return _a[1] > _b[1];
+    }
+};
+
+int Disk_Controller(vector<vector<int>> job)
+{
+    int answer = 0;
+    int current = 0, index = 0;
+
+    priority_queue<vector<int>, vector<vector<int>>, Compare_job> pqbjobs;
+
+    sort(job.begin(), job.end());
+
+    while (index != job.size() || !pqbjobs.empty())
+    {
+        while (index != job.size() && job[index][0] <= current)
+            pqbjobs.emplace(job[index++]);
+
+        if (!pqbjobs.empty())
+        {
+            current += pqbjobs.top()[1];
+            answer += (current - pqbjobs.top()[0]);
+            pqbjobs.pop();
+        }
+        else
+            current = job[index][0];
+    }
+
+    answer /= job.size();
+    return answer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 class comparePQ
 {
 public:
