@@ -7,7 +7,6 @@
 #include "Solutions/boat.h"
 #include "Solutions/Carpet.h"
 #include "Solutions/character_compression.h"
-#include "Solutions/connectland.h"
 #include "Solutions/CourseFood.h"
 #include "Solutions/diskcontroler.h"
 #include "Solutions/doublepriqueue.h"
@@ -39,3 +38,4 @@
 #include "Solutions/Immigration.h"
 #include "Solutions/Farthest_Node.h"
 #include "Solutions/Network.h"
+#include "Solutions/Connecting_islands.h"

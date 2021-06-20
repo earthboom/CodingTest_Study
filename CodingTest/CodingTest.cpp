@@ -103,6 +103,8 @@ int main()
     //solution_diskcontroler(_jobs);
     //Disk_Controller(_jobs);
 
+    //vector<string> _oper = { "I 16","D 1" };
+    //vector<string> _oper = { "I 7","I 5","I -5","D -1" };
     //vector<string> _oper = { "I -45", "I 653", "D 1", "I -642", "I 45", "I 97", "D 1", "D -1", "I 333" };
     //vector<string> _oper = { "I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1" };
     //solution_doublepriqueue(_oper);
@@ -154,7 +156,9 @@ int main()
     //vector<vector<int>> fn = { {3, 6},{4, 3},{3, 2},{1, 3},{1, 2},{2, 4},{5, 2 } };
     //Farthest_Node(6, fn);
 
-    Network(3, { {1, 1, 0}, {1, 1, 0}, {0,0,1 } });
+    //Network(3, { {1, 1, 0}, {1, 1, 0}, {0,0,1 } });
+
+    Connecting_islands(4, { {0,1,1} ,{0,2,2},{1,2,5},{1,3,1 }, { 2,3,8 } });
 }
 
 

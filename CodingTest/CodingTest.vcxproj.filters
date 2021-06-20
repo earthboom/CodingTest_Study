@@ -45,9 +45,6 @@
     <ClInclude Include="Solutions\Carpet.h">
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
-    <ClInclude Include="Solutions\connectland.h">
-      <Filter>Header Files\Solutions</Filter>
-    </ClInclude>
     <ClInclude Include="Solutions\diskcontroler.h">
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
@@ -139,6 +136,9 @@
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
     <ClInclude Include="Solutions\Network.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Connecting_islands.h">
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
   </ItemGroup>

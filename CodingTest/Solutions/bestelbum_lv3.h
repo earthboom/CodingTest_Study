@@ -33,7 +33,10 @@ vector<int> Bestelbum(vector<string> genres, vector<int> plays)
     for (auto& m : mapCount)
         vecElbum.emplace_back(make_pair(m.second, m.first));
 
-    sort(vecElbum.begin(), vecElbum.end(), Compare);
+    sort(vecElbum.begin(), vecElbum.end(), 
+        [](pair<int, string>& _a, pair<int, string>& _b) {
+            return _a.first > _b.first;
+        });
 
 
     for (auto& e : vecElbum)
