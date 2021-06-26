@@ -16,6 +16,9 @@
     <Filter Include="Header Files\Solutions">
       <UniqueIdentifier>{f37bad81-9784-4f95-a39e-4903ba10a49c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Algorithm_Study">
+      <UniqueIdentifier>{0cb1e86b-ebac-480b-bb62-1bf5b861c52b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -139,6 +142,30 @@
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
     <ClInclude Include="Solutions\Connecting_islands.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Control_Camera.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\ontheWaytoShcool.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Stealing.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm_Study\Dynamic_Programming.h">
+      <Filter>Header Files\Algorithm_Study</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm_Study_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithm_Study\Binary_Search.h">
+      <Filter>Header Files\Algorithm_Study</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Stepping_Stone.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Ranking.h">
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
   </ItemGroup>

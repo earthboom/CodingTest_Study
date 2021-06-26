@@ -2,10 +2,58 @@
 
 #include "stdafx.h"
 
-// 프로그래머스 고득점 Kit
-// 힙 - 이중우선순위큐
+// 프로그래머스 - Lv 3
+
+// 힙 ( Heap )
+// 이중우선순위큐
+
+//======================================================================================
+//======================================================================================
+vector<int> Doublepriorityqueue_03(vector<string> operations)
+{
+    vector<int> answer = { 0, 0 };
+    deque<int> deque_oper;
+
+    for (string& o : operations)
+    {
+        char key = o[0];
+        o.erase(0, 2);
+        int value = stoi(o);
+
+        if (key == 'D')
+        {
+            if (deque_oper.size() > 0)
+            {
+                sort(deque_oper.begin(), deque_oper.end(), greater<int>());
+                if (value == 1)
+                    deque_oper.pop_front();
+                else
+                    deque_oper.pop_back();
+            }            
+        }
+        else
+            deque_oper.push_back(value);
+    }
+
+    if (deque_oper.size() != 0)
+    {
+        if (deque_oper.size() == 1)
+            answer.emplace_back(0);
+
+        sort(deque_oper.begin(), deque_oper.end(), greater<int>());
+        answer[0] = deque_oper.front();
+        answer[1] = deque_oper.back();
+    }    
+
+    return answer;
+}
+//======================================================================================
+//======================================================================================
 
 
+
+//======================================================================================
+//======================================================================================
 vector<int> Doublepriorityqueue(vector<string> operations)
 {
     vector<int> answer = { 0, 0 };
@@ -40,19 +88,13 @@ vector<int> Doublepriorityqueue(vector<string> operations)
 
     return answer;
 }
+//======================================================================================
+//======================================================================================
 
 
 
-
-
-
-
-
-
-
-
-
-
+//======================================================================================
+//======================================================================================
 vector<int> solution_doublepriqueue(vector<string> operations) 
 {
     vector<int> answer = { 0, 0 };
@@ -97,3 +139,5 @@ vector<int> solution_doublepriqueue(vector<string> operations)
 
     return answer;
 }
+//======================================================================================
+//======================================================================================

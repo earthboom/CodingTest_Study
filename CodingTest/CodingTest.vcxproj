@@ -145,6 +145,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Algorithm_Study\Binary_Search.h" />
+    <ClInclude Include="Algorithm_Study\Dynamic_Programming.h" />
+    <ClInclude Include="Algorithm_Study_headers.h" />
     <ClInclude Include="Solutions\barcet_arrange.h" />
     <ClInclude Include="Solutions\Baseball.h" />
     <ClInclude Include="Solutions\bestelbum_lv3.h" />
@@ -154,6 +157,7 @@
     <ClInclude Include="Solutions\Carpet.h" />
     <ClInclude Include="Solutions\character_compression.h" />
     <ClInclude Include="Solutions\Connecting_islands.h" />
+    <ClInclude Include="Solutions\Control_Camera.h" />
     <ClInclude Include="Solutions\CourseFood.h" />
     <ClInclude Include="Solutions\Cross_the_bridge.h" />
     <ClInclude Include="Solutions\diskcontroler.h" />
@@ -171,14 +175,18 @@
     <ClInclude Include="Solutions\morespicy.h" />
     <ClInclude Include="Solutions\Network.h" />
     <ClInclude Include="Solutions\NumberK.h" />
+    <ClInclude Include="Solutions\ontheWaytoShcool.h" />
     <ClInclude Include="Solutions\PictureNameChanger.h" />
     <ClInclude Include="Solutions\pipecut.h" />
     <ClInclude Include="Solutions\primeNumber.h" />
     <ClInclude Include="Solutions\print.h" />
     <ClInclude Include="Solutions\ramenFactory.h" />
+    <ClInclude Include="Solutions\Ranking.h" />
     <ClInclude Include="Solutions\RecommandID.h" />
     <ClInclude Include="Solutions\snowball.h" />
     <ClInclude Include="Solutions\startcount.h" />
+    <ClInclude Include="Solutions\Stealing.h" />
+    <ClInclude Include="Solutions\Stepping_Stone.h" />
     <ClInclude Include="Solutions\stock.h" />
     <ClInclude Include="Solutions\Strugacarro_season.h" />
     <ClInclude Include="Solutions\TargetNumber.h" />

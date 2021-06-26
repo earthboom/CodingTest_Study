@@ -2,10 +2,51 @@
 
 #include "stdafx.h"
 
-// 프로그래머스 고득점 Kit
-// 스택 / 큐 - 프린터 (Lv2)
+// 프로그래머스 - Lv 2
+
+// 스택 / 큐 ( stack / queue )
+// 프린터
+
+//======================================================================================
+//======================================================================================
+int Printer_03(vector<int> priorities, int location)
+{
+    int answer = 0;
+
+    queue<pair<int, int>> lineup;
+    priority_queue<int, vector<int>> pq_sort;
+    for (int i = 0; i < priorities.size(); ++i)
+    {
+        lineup.emplace(make_pair(i, priorities[i]));
+        pq_sort.emplace(priorities[i]);
+    }
+
+    while (answer != priorities.size())
+    {
+        int order = lineup.front().first;
+        int importance = lineup.front().second;
+        lineup.pop();
+
+        if (importance == pq_sort.top())
+        {
+            ++answer;
+            pq_sort.pop();
+
+            if (order == location)
+                break;
+        }
+        else
+            lineup.emplace(make_pair(order, importance));
+    }
+
+    return answer;
+}
+//======================================================================================
+//======================================================================================
 
 
+//======================================================================================
+//======================================================================================
 int Printer(vector<int> priorities, int location)
 {
     int answer = 0;
@@ -39,39 +80,12 @@ int Printer(vector<int> priorities, int location)
 
     return answer;
 }
+//======================================================================================
+//======================================================================================
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//======================================================================================
+//======================================================================================
 int solution_print(vector<int> priorities, int location)
 {
     int answer = 0;
@@ -105,3 +119,5 @@ int solution_print(vector<int> priorities, int location)
 
     return answer;
 }
+//======================================================================================
+//======================================================================================

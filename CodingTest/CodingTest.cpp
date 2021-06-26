@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "Solution_headers.h"
+#include "Algorithm_Study_headers.h"
 
 int main()
 {
@@ -158,7 +159,42 @@ int main()
 
     //Network(3, { {1, 1, 0}, {1, 1, 0}, {0,0,1 } });
 
-    Connecting_islands(4, { {0,1,1} ,{0,2,2},{1,2,5},{1,3,1 }, { 2,3,8 } });
+    //Connecting_islands(4, { {0,1,1} ,{0,2,2},{1,2,5},{1,3,1 }, { 2,3,8 } });
+
+    //Control_Camera({ {-20,15}, {-14, -5}, {-18,-13}, {-5, -3} });
+
+    //vector<vector<int>> ows = { {2, 2} };
+    //ontheWaytoShcool(4, 3, ows);
+
+    //Stealing({ 1, 2, 3, 1 });
+    //Stealing({ 90, 0, 0, 95, 1, 1 });
+
+    //cout << fibo_dynamic(5) << endl;
+
+    //cout << DP_solution_0(5) << endl;
+    //cout << DP_solution_1(5) << endl;
+    //DP_solution_2(5);
+    //DP_solution_3(5);
+
+    //Binary_search_02(9, { 1, 3, 3, 4, 5, 5, 6, 9, 10, 12, 12, 15 });
+
+    //Stepping_ston(25, { 2, 14, 11, 21, 17 }, 2);
+
+    //Ranking(2, { {4,3}, {4,2}, {3,2}, {1,2}, {2,5} });
+
+    //Bestelbum_03({ "classic", "pop", "classic", "classic", "pop" }, { 500, 600, 150, 800, 2500 });
+    //Bestelbum_03({ "classic", "pop", "classic", "pop", "classic", "classic" }, { 400, 600, 150, 600, 500, 500 });
+
+    //Cross_the_bridge_03(2, 10, { 7,4,5,6 });
+    //Cross_the_bridge(2, 10, { 7,4,5,6 });
+
+    //Printer_03({ 2, 1, 3, 2 }, 2);
+    //Printer_03({ 1, 1, 9, 1, 1, 1 }, 0);
+
+    //Disk_Controller_03({ {0,3}, {1,9}, {2,6} });
+    //Disk_Controller({ {0,3}, {1,9}, {2,6} });
+
+    Doublepriorityqueue_03({ "I 16", "I -5643", "D -1", "D 1", "D 1", "I 123", "D -1" });
 }
 
 

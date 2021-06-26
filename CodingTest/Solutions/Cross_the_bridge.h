@@ -2,9 +2,60 @@
 
 #include "stdafx.h"
 
-// 프로그래머스 고득점 Kit
-// 스택 / 큐 - 다리를 지나는 트럭 (Lv2)
+// 프로그래머스 - Lv 2
 
+// 스택 / 큐 ( stack / queue )
+// 다리를 지나는 트럭
+
+//======================================================================================
+//======================================================================================
+int Cross_the_bridge_03(int bridge_length, int weight, vector<int> truck_weights)
+{
+    int answer = 0;
+
+    if (bridge_length < 1 && bridge_length > 10000)
+        return answer;
+    if (weight < 1 && weight > 10000)
+        return answer;
+
+    queue<int> onthebridge;
+    onthebridge.push(truck_weights[0]);
+    answer = 1;
+
+    int passTrucks = truck_weights.size();
+    int cur_weight = truck_weights[0];
+    int start = 1;
+
+    while (passTrucks > 0)
+    {
+        ++answer;
+
+        if (onthebridge.size() == bridge_length)
+        {
+            if (onthebridge.front() > 0)
+                --passTrucks;
+
+            cur_weight -= onthebridge.front();
+            onthebridge.pop();
+        }
+
+         if (start < truck_weights.size() && (weight - cur_weight) >= truck_weights[start])
+         {
+             cur_weight += truck_weights[start];
+             onthebridge.push(truck_weights[start++]);
+         }
+         else
+             onthebridge.push(0);
+    }
+
+    return answer;
+}
+//======================================================================================
+//======================================================================================
+
+
+//======================================================================================
+//======================================================================================
 int Cross_the_bridge(int bridge_length, int weight, vector<int> truck_weights)
 {
 	int answer = 0;
@@ -39,7 +90,11 @@ int Cross_the_bridge(int bridge_length, int weight, vector<int> truck_weights)
 
 	return answer;
 }
+//======================================================================================
+//======================================================================================
 
+//======================================================================================
+//======================================================================================
 int solution(int bridge_length, int weight, vector<int> truck_weights) {
     int answer = 0;
 
@@ -75,3 +130,5 @@ int solution(int bridge_length, int weight, vector<int> truck_weights) {
 
     return answer;
 }
+//======================================================================================
+//======================================================================================

@@ -2,6 +2,11 @@
 
 #include "stdafx.h"
 
+// ÇÁ·Î±×·¡¸Ó½º - Lv 3
+
+// Å½¿å¹ý (Greedy)
+// ¼¶ ¿¬°á
+
 int get_Parent(vector<int>& p, int x)
 {
 	if (p[x] == x)

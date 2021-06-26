@@ -39,3 +39,8 @@
 #include "Solutions/Farthest_Node.h"
 #include "Solutions/Network.h"
 #include "Solutions/Connecting_islands.h"
+#include "Solutions/Control_Camera.h"
+#include "Solutions/ontheWaytoShcool.h"
+#include "Solutions/Stealing.h"
+#include "Solutions/Stepping_Stone.h"
+#include "Solutions/Ranking.h"
