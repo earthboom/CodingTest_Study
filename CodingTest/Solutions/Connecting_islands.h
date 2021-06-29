@@ -61,12 +61,12 @@ int Connecting_islands(int n, vector<vector<int>> costs)
         if (!([](vector<int>& p, int s, int e)->bool 
             {
                 s = get_Parent(p, s);
-                    e = get_Parent(p, e);
+                e = get_Parent(p, e);
 
-                    if (s == e)
-                        return true;
-                    else
-                        return false;
+                if (s == e)
+                    return true;
+                else
+                    return false;
             }(parent, lineVec[i].second.first, lineVec[i].second.second)))
 		{
             answer += lineVec[i].first;

@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
+      <WarningLevel>Level4</WarningLevel>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
@@ -151,11 +151,13 @@
     <ClInclude Include="Solutions\barcet_arrange.h" />
     <ClInclude Include="Solutions\Baseball.h" />
     <ClInclude Include="Solutions\bestelbum_lv3.h" />
+    <ClInclude Include="Solutions\Best_Set.h" />
     <ClInclude Include="Solutions\BiggestNumber.h" />
     <ClInclude Include="Solutions\boat.h" />
     <ClInclude Include="Solutions\Camouflage.h" />
     <ClInclude Include="Solutions\Carpet.h" />
     <ClInclude Include="Solutions\character_compression.h" />
+    <ClInclude Include="Solutions\Chuseok_Traffic.h" />
     <ClInclude Include="Solutions\Connecting_islands.h" />
     <ClInclude Include="Solutions\Control_Camera.h" />
     <ClInclude Include="Solutions\CourseFood.h" />
@@ -164,6 +166,8 @@
     <ClInclude Include="Solutions\doublepriqueue.h" />
     <ClInclude Include="Solutions\Express_as_N.h" />
     <ClInclude Include="Solutions\Farthest_Node.h" />
+    <ClInclude Include="Solutions\Hanoi_Tower.h" />
+    <ClInclude Include="Solutions\How_to_lineup.h" />
     <ClInclude Include="Solutions\H_Index.h" />
     <ClInclude Include="Solutions\Immigration.h" />
     <ClInclude Include="Solutions\Integer_Triangle.h" />
@@ -175,7 +179,9 @@
     <ClInclude Include="Solutions\morespicy.h" />
     <ClInclude Include="Solutions\Network.h" />
     <ClInclude Include="Solutions\NumberK.h" />
+    <ClInclude Include="Solutions\N_Queen.h" />
     <ClInclude Include="Solutions\ontheWaytoShcool.h" />
+    <ClInclude Include="Solutions\Overtime_Exponent.h" />
     <ClInclude Include="Solutions\PictureNameChanger.h" />
     <ClInclude Include="Solutions\pipecut.h" />
     <ClInclude Include="Solutions\primeNumber.h" />

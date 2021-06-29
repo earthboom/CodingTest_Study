@@ -168,6 +168,24 @@
     <ClInclude Include="Solutions\Ranking.h">
       <Filter>Header Files\Solutions</Filter>
     </ClInclude>
+    <ClInclude Include="Solutions\Chuseok_Traffic.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\N_Queen.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Hanoi_Tower.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Best_Set.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\How_to_lineup.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
+    <ClInclude Include="Solutions\Overtime_Exponent.h">
+      <Filter>Header Files\Solutions</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CodingTest.cpp">
